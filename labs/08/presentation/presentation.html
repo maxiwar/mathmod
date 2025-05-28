@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Модель конкуренции двух фирм</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link href="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Freset%2Ecss" rel="stylesheet">
+  <link href="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Freveal%2Ecss" rel="stylesheet">
+  <style>
+.reveal .sourceCode { 
+overflow: visible;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <link href="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Ftheme%2Fbeige%2Ecss" rel="stylesheet" id="theme">
+  
+  
+  
+  
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Модель конкуренции двух фирм</h1>
+  <p class="author"><p>Герра Гарсия Максимиано Антонио</p></p>
+  <p class="institute"><p>Российский Университет Дружбы Народов</p></p>
+  <p class="date">28 05, 2025, Москва, Россия</p>
+</section>
+
+<section>
+<section id="цели-и-задачи-работы" class="title-slide slide level1">
+<h1>Цели и задачи работы</h1>
+
+</section>
+<section id="цель-лабораторной-работы" class="slide level2">
+<h2>Цель лабораторной работы</h2>
+<p>Изучить модель конкуренции</p>
+</section>
+<section id="задание-к-лабораторной-работе" class="slide level2">
+<h2>Задание к лабораторной работе</h2>
+<ol type="1">
+<li>Изучить модель конкуренции двух фирм</li>
+<li>Построить графики изменения оборотных средств в двух случаях</li>
+</ol>
+</section></section>
+<section>
+<section id="процесс-выполнения-лабораторной-работы" class="title-slide slide level1">
+<h1>Процесс выполнения лабораторной работы</h1>
+
+</section>
+<section id="теоретический-материал" class="slide level2">
+<h2>Теоретический материал</h2>
+<p>Обозначения:</p>
+<p><span class="math inline"><em>N</em></span> - число потребителей
+производимого продукта.</p>
+<p><span class="math inline"><em>S</em></span> – доходы потребителей
+данного продукта.</p>
+<p><span class="math inline"><em>M</em></span> – оборотные средства
+предприятия</p>
+<p><span class="math inline"><em>τ</em></span> - длительность
+производственного цикла</p>
+<p><span class="math inline"><em>p</em></span> - рыночная цена
+товара</p>
+<p><span class="math inline"><em>p̃</em></span> - себестоимость
+продукта</p>
+<p><span class="math inline"><em>δ</em></span> - доля оборотных средств,
+идущая на покрытие переменных издержек</p>
+<p><span class="math inline"><em>k</em></span> - постоянные издержки,
+которые не зависят от количества выпускаемой продукции</p>
+</section>
+<section id="теоретический-материал-1" class="slide level2">
+<h2>Теоретический материал</h2>
+<p>Функция спроса:</p>
+<p><span class="math display">$$Q = q - k\frac{p}{S} = q(1 -
+\frac{p}{p_{cr}})$$</span></p>
+<p>Уравнения динамики оборотных средств:</p>
+<p><span class="math display">$$ \frac{dM}{dt} = -\frac{M \delta}{\tau}
++ NQp - k = -\frac{M\delta}{\tau} + Nq(1 - \frac{p}{p_{cr}})p - k
+$$</span></p>
+<p>Уравнение для рыночной цены <span class="math inline"><em>p</em></span> :</p>
+<p><span class="math display">$$ \frac{dp}{dt} = \gamma
+(-\frac{M\delta}{\tau \widetilde{p}} + Nq(1-\frac{p}{p_{cr}}) )
+$$</span></p>
+</section>
+<section id="теоретический-материал-2" class="slide level2">
+<h2>Теоретический материал</h2>
+<p>При заданном M уравнение описывает быстрое стремление цены к
+равновесному значению цены, которое устойчиво. В этом случае уравнение
+можно заменить алгебраическим соотношением</p>
+<p><span class="math display">$$ -\frac{M\delta}{\tau \widetilde{p}} +
+Nq(1-\frac{p}{p_{cr}}) = 0$$</span></p>
+<p>Равновесное значение цены <span class="math inline"><em>p</em></span>
+равно</p>
+<p><span class="math display">$$ p = p_{cr}(1 - \frac{M\delta}{\tau
+\widetilde{p} Nq})$$</span></p>
+</section>
+<section id="теоретический-материал-3" class="slide level2">
+<h2>Теоретический материал</h2>
+<p>Уравнения динамики оборотных средств</p>
+<p><span class="math display">$$\frac{dM}{dt} = -\frac{M
+\delta}{\tau}(\frac{p}{p_{cr}}-1) - M^2 ( \frac{\delta}{\tau
+\widetilde{p} })^2 \frac{p_{cr}}{Nq} - k$$</span></p>
+<p>Стационарное состояние</p>
+<p><span class="math display">$$ \widetilde{M_{1,2}} = \frac{1}{2} a \pm
+\sqrt{\frac{a^2}{4} - b}$$</span></p>
+<p>где</p>
+<p><span class="math display">$$ a = Nq(1 - \frac{\widetilde{p}}{p_{cr}}
+\widetilde{p} \frac{\tau}{\delta}), b = kNq \frac{(\tau
+\widetilde{p})^2}{p_{cr}\delta ^2} $$</span></p>
+</section>
+<section id="теоретический-материал-4" class="slide level2">
+<h2>Теоретический материал</h2>
+<p>При больших постоянных издержках (в случае <span class="math inline"><em>a</em><sup>2</sup> &lt; 4<em>b</em></span>)
+стационарных состояний нет.</p>
+<p>При <span class="math inline"><em>b</em> &lt;  &lt; <em>a</em></span>
+стационарные значения <span class="math inline"><em>M</em></span>
+равны</p>
+<p><span class="math display">$$ \widetilde{M_{+}} = Nq
+\frac{\tau}{\delta}(1 - \frac{\widetilde{p}}{p_{cr}})\widetilde{p},
+\widetilde{M_{-}} = k\widetilde{p} \frac{\tau}{\delta(p_{cr} -
+\widetilde{p})} $$</span></p>
+</section></section>
+<section>
+<section id="условие-задачи" class="title-slide slide level1">
+<h1>Условие задачи</h1>
+
+</section>
+<section id="случай-1" class="slide level2">
+<h2>Случай 1</h2>
+<p>Рассмотрим две фирмы, производящие взаимозаменяемые товары
+одинакового качества и находящиеся в одной рыночной нише. Будем считать,
+что постоянные издержки пренебрежимо малы.</p>
+<p><span class="math display">$$ \frac{dM_1}{d\Theta} = M_1 -
+\frac{b}{c_1}M_1 M_2 - \frac{a1}{c1} M_1^2 $$</span></p>
+<p><span class="math display">$$ \frac{dM_2}{d\Theta} = \frac{c_2}{c_1}
+M_2 - \frac{b}{c_1} M_1 M_2 - \frac{a_2}{c_1} M_2^2 $$</span></p>
+</section>
+<section id="случай-2" class="slide level2">
+<h2>Случай 2</h2>
+<p>Рассмотрим модель, когда, помимо экономического фактора влияния
+используются еще и социально-психологические факторы.</p>
+<p><span class="math display">$$\frac{dM_1}{d\Theta} = M_1 -
+(\frac{b}{c_1} + 0.0011)M_1 M_2 - \frac{a1}{c1} M_1^2 $$</span></p>
+<p><span class="math display">$$ \frac{dM_2}{d\Theta} = \frac{c_2}{c_1}
+M_2 - \frac{b}{c_1} M_1 M_2 - \frac{a_2}{c_1} M_2^2 $$</span></p>
+</section>
+<section id="данные" class="slide level2">
+<h2>Данные</h2>
+<p><span class="math display">$$ a_1 = \frac{p_{cr}}{\tau_1^2
+\widetilde{p}_1^2 Nq } $$</span> <span class="math display">$$ a_2 =
+\frac{p_{cr}}{\tau_2^2 \widetilde{p}_2^2 Nq } $$</span> <span class="math display">$$ b = \frac{p_{cr}}{\tau_1^2 \widetilde{p}_1^2
+\tau_2^2 \widetilde{p}_2^2 Nq} $$</span> <span class="math display">$$
+c_1 = \frac{p_{cr} - \widetilde{p}_1}{\tau_1 \widetilde{p}_1} $$</span>
+<span class="math display">$$ c_2 = \frac{p_{cr} -
+\widetilde{p}_2}{\tau_2 \widetilde{p}_2} $$</span></p>
+</section>
+<section id="данные-1" class="slide level2">
+<h2>Данные</h2>
+<p><span class="math display"><em>M</em><sub>0</sub><sup>1</sup> = 4 <em>M</em><sub>0</sub><sup>2</sup> = 3.5</span>
+<span class="math display"><em>p</em><sub><em>c</em><em>r</em></sub> = 10.7 <em>N</em> = 25 <em>q</em> = 1</span>
+<span class="math display"><em>τ</em><sub>1</sub> = 13 <em>τ</em><sub>2</sub> = 20</span>
+<span class="math display"><em>p̃</em><sub>1</sub> = 6.2 <em>p̃</em><sub>2</sub> = 4.4</span></p>
+</section>
+<section id="график-в-первом-случае" class="slide level2">
+<h2>График в первом случае</h2>
+<figure>
+<img data-src="data:image/png;base64,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" id="fig:001" style="width:70.0%;height:70.0%" alt="График для случая 1" />
+<figcaption aria-hidden="true">График для случая 1</figcaption>
+</figure>
+</section>
+<section id="график-во-втором-случае" class="slide level2">
+<h2>График во втором случае</h2>
+<figure>
+<img data-src="data:image/png;base64,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" id="fig:002" style="width:70.0%;height:70.0%" alt="График для случая 2" />
+<figcaption aria-hidden="true">График для случая 2</figcaption>
+</figure>
+</section></section>
+<section>
+<section id="выводы-по-проделанной-работе" class="title-slide slide level1">
+<h1>Выводы по проделанной работе</h1>
+
+</section>
+<section id="вывод" class="slide level2">
+<h2>Вывод</h2>
+<p>В ходе выполнения лабораторной работы была изучена модель конкуренции
+двух фирм и построены графики.</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fdist%2Freveal%2Ejs"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fplugin%2Fnotes%2Fnotes%2Ejs"></script>
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fplugin%2Fsearch%2Fsearch%2Ejs"></script>
+  <script src="data:text/plain;charset=UTF-8;charset=utf-8,Not%20found%3A%20%2Freveal%2Ejs%404%2E6%2E1%2F%2Fplugin%2Fzoom%2Fzoom%2Ejs"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
